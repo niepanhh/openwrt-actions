@@ -21,7 +21,8 @@ permissions:
   actions: write
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+#  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/openwrt/openwrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -47,7 +48,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
       
-        rm -rf ./tmp && rm -rf .config
+#       rm -rf ./tmp && rm -rf .config
         
         
         sudo rm -rf /etc/apt/sources.list.d/* /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL
