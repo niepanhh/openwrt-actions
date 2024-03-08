@@ -47,7 +47,7 @@ jobs:
         DEBIAN_FRONTEND: noninteractive
       run: |
       
-        make clean
+        rm -rf ./tmp && rmdir -rf .config
         make dircleanmake distclean
         rm .config
         
